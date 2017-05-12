@@ -1,15 +1,56 @@
 ---
 layout: page
-title: About
+title: CV
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Aleksandr Demshin
+=================
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+email: demshin@gmail.com
+telegram: [@demshin](https://t.me/demshin)
+web: http://desmhin.github.com
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+## IT experience  
+
+### Pro IT Resource, Perm, <http://proitr.ru>
+(October 2015 - present time)
+QA Automation
+
+- Automation Web UI Testing
+- Manual Web Testing
+- Tools
+  - Java
+  - JavaScript
+  - Selenium
+  - (Webdriver.IO)[http://webdriver.io]
+
+### REGIONAL MANAGEMENT CENTRE, Perm, <http://rmc.edu.ru/eng/>
+(October 2003 — December 2011)
+Lecturer
+
+- the Department of information technology
+- the course "Basics of computer networking"
+- Tools
+  - Windows Server 2000, 2003
+  - Active Directory
+  - Network protocols
+  - Network topology
+  - Cable systems
+
+# Technical Skills
+
+## Programming languages
+- Java
+- JavaScript
+- HTML and CSS
+- Basics of SQL
+
+## Tools, Frameworks and other computer skills
+- Selenium
+- Webdriver.IO
+- EJB3
+- IntelliJ IDEA
+- Databases: PostgreSQL
+- Version control software: git
+- OS: Mac OS X, Linux
