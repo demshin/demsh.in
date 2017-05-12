@@ -9,7 +9,7 @@
 title: Aleksandr Demshin
 email: demshin@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Page of Aleksander Demshin, QA Automation, Junior Web Developer (Java & JavaScript)
+  Page of Aleksandr Demshin, QA Automation, Junior Web Developer (Java & JavaScript)
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://demshin.github.com" # the base hostname & protocol for your site
 twitter_username: demshin
