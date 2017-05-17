@@ -13,9 +13,8 @@ web: <http://desmhin.github.com>
 
 ## IT experience  
 
-### Pro IT Resource, Perm, <http://proitr.ru>
-(October 2015 - April 2017)
-QA Automation
+### Pro IT Resource, Perm, <http://proitr.ru> (October 2015 - April 2017)
+#### QA Automation
 
 - Automation Web UI Testing
 - Manual Web Testing
@@ -26,9 +25,8 @@ QA Automation
   - [Webdriver.IO](http://webdriver.io)
 - Scrum
 
-### REGIONAL MANAGEMENT CENTRE, Perm, <http://rmc.edu.ru/eng/>
-(October 2003 — December 2011)
-Lecturer
+### REGIONAL MANAGEMENT CENTRE, Perm, <http://rmc.edu.ru/eng/> (October 2003 — December 2011)
+#### Lecturer
 
 - the Department of information technology
 - the course "Basics of computer networking"
