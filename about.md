@@ -7,6 +7,7 @@ permalink: /about/
 Aleksandr Demshin
 =================
 
+address: Russia, Perm
 email: [demshin@gmail.com](mailto:demshin@gmail.com)
 telegram: [@demshin](https://t.me/demshin)
 web: <http://desmhin.github.com>
