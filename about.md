@@ -7,14 +7,14 @@ permalink: /about/
 Aleksandr Demshin
 =================
 
-email: demshin@gmail.com
+email: [demshin@gmail.com](mailto:demshin@gmail.com)
 telegram: [@demshin](https://t.me/demshin)
-web: http://desmhin.github.com
+web: (http://desmhin.github.com)
 
 ## IT experience  
 
 ### Pro IT Resource, Perm, <http://proitr.ru>
-(October 2015 - present time)
+(October 2015 - April 2017)
 QA Automation
 
 - Automation Web UI Testing
@@ -22,8 +22,9 @@ QA Automation
 - Tools
   - Java
   - JavaScript
-  - Selenium
-  - (Webdriver.IO)[http://webdriver.io]
+  - [Selenium](http://seleniumhq.org)
+  - [Webdriver.IO](http://webdriver.io)
+- Scrum
 
 ### REGIONAL MANAGEMENT CENTRE, Perm, <http://rmc.edu.ru/eng/>
 (October 2003 — December 2011)
@@ -31,6 +32,9 @@ Lecturer
 
 - the Department of information technology
 - the course "Basics of computer networking"
+  - Network Topology
+  - OSI model
+  - TCP/IP
 - Tools
   - Windows Server 2000, 2003
   - Active Directory
@@ -43,14 +47,21 @@ Lecturer
 ## Programming languages
 - Java
 - JavaScript
-- HTML and CSS
+- HTML
+- Basics of CSS
 - Basics of SQL
+
+## Testing
+- Functional Testing
+- Automated UI Testing
+- Unit Testing
+- TestNG
 
 ## Tools, Frameworks and other computer skills
 - Selenium
 - Webdriver.IO
 - EJB3
-- IntelliJ IDEA
+- IntelliJ IDEA, Sublime
 - Databases: PostgreSQL
 - Version control software: git
 - OS: Mac OS X, Linux

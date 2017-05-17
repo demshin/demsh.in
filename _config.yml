@@ -9,7 +9,7 @@
 title: Aleksandr Demshin
 email: demshin@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Page of Aleksandr Demshin, QA Automation, Junior Web Developer (Java & JavaScript)
+  Blog of Aleksandr Demshin, QA Automation, Junior Web Developer (Java & JavaScript)
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://demshin.github.com" # the base hostname & protocol for your site
 twitter_username: demshin
@@ -17,3 +17,11 @@ github_username:  demshin
 
 # Build settings
 markdown: kramdown
+timezone: Asia/Yekaterinburg
+
+# При выводе всех постов на одной странице используем постраничный вывод
+paginate: 5
+paginate_path: 'page:num'
+
+# не публиковать посты, указанное время которых позднее времени момента публикации
+future: false
