@@ -9,7 +9,7 @@ Aleksandr Demshin
 
 email: [demshin@gmail.com](mailto:demshin@gmail.com)
 telegram: [@demshin](https://t.me/demshin)
-web: (http://desmhin.github.com)
+web: <http://desmhin.github.com>
 
 ## IT experience  
 
