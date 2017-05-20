@@ -49,6 +49,7 @@ web: <http://desmhin.github.com>
 - HTML
 - Basics of CSS
 - Basics of SQL
+- Basics of Python 3
 
 ## Testing
 - Functional Testing
@@ -60,7 +61,10 @@ web: <http://desmhin.github.com>
 - Selenium
 - Webdriver.IO
 - EJB3
-- IntelliJ IDEA, Sublime
+- jQuery basics
+- AngularJS
+- NodeJS
+- IntelliJ IDEA, Sublime, Atom
 - Databases: PostgreSQL
 - Version control software: git
 - OS: Mac OS X, Linux
