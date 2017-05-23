@@ -18,13 +18,19 @@ web: <http://demshin.github.com>
 #### QA Automation
 
 - Automation Web UI Testing
-- Manual Web Testing
+- Regression Testing
+- Writing Test Cases
+- Bug Reporting
+- Bug Fixing Control
 - Tools
   - Java
   - JavaScript
   - [Selenium](http://seleniumhq.org)
   - [Webdriver.IO](http://webdriver.io)
-- Scrum
+  - Docker
+  - Selenium Grid
+- Scrum, Kanban
+- Writing Technical Documentation
 
 ### REGIONAL MANAGEMENT CENTRE, Perm, <http://rmc.edu.ru/eng/> (October 2003 — December 2011)
 #### Lecturer
@@ -49,7 +55,7 @@ web: <http://demshin.github.com>
 - HTML
 - Basics of CSS
 - Basics of SQL
-- Basics of Python 3
+- Basics of Python
 
 ## Testing
 - Functional Testing
@@ -62,9 +68,15 @@ web: <http://demshin.github.com>
 - Webdriver.IO
 - EJB3
 - jQuery basics
-- AngularJS
+- AngularJS 1
 - NodeJS
 - IntelliJ IDEA, Sublime, Atom
 - Databases: PostgreSQL
 - Version control software: git
 - OS: Mac OS X, Linux
+- Atlassian Jira, Confluence 
+
+## Other skills
+- very good Russian
+- reading technical documentation on English
+- easily communicate with people
