@@ -10,7 +10,7 @@ Aleksandr Demshin
 address: Russia, Perm
 email: [demshin@gmail.com](mailto:demshin@gmail.com)
 telegram: [@demshin](https://t.me/demshin)
-web: <http://demshin.github.com>
+web: <http://demshin.github.io>
 
 ## IT experience  
 
@@ -62,17 +62,19 @@ web: <http://demshin.github.com>
 - Automated UI Testing
 - Unit Testing
 - TestNG
+- API Testing
 
 ## Tools, Frameworks and other computer skills
 - Selenium
 - Webdriver.IO
+- REST-Assured
 - EJB3
 - jQuery basics
 - AngularJS 1
-- NodeJS
+- NodeJS basics
 - IntelliJ IDEA, Sublime, Atom
 - Databases: PostgreSQL
-- Version control software: git
+- Version control software: git (Gitlab, Github, Bitbucket)
 - OS: Mac OS X, Linux
 - Atlassian Jira, Confluence 
 
