@@ -82,3 +82,11 @@ web: <http://demshin.github.io>
 - very good Russian
 - reading technical documentation on English
 - easily communicate with people
+
+## Education
+### PERM NATIONAL RESEARCH POLYTECHNIC UNIVERSITY, <http://pstu.ru/en/>, (2005 - 2010) 
+Electrical Engineering Faculty
+Speciality "Automatics and telemechanics"
+
+### REGIONAL MANAGEMENT CENTRE, Perm, <http://rmc.edu.ru/eng/> (2003 — 2005)
+The faculty of information technology, Organization and maintenance of computer networks
