@@ -84,9 +84,13 @@ web: <http://demshin.github.io>
 - easily communicate with people
 
 ## Education
-### PERM NATIONAL RESEARCH POLYTECHNIC UNIVERSITY, <http://pstu.ru/en/>, (2005 - 2010) 
+### GetJavaJob <http://www.getjavajob.com> 2015 - professional retraining
+First part of course
+Thank you very much Vitaly :-)
+  
+### PERM NATIONAL RESEARCH POLYTECHNIC UNIVERSITY, <http://pstu.ru/en/>, (2005 - 2010) - incomplete higher education
 Electrical Engineering Faculty
 Speciality "Automatics and telemechanics"
 
-### REGIONAL MANAGEMENT CENTRE, Perm, <http://rmc.edu.ru/eng/> (2003 — 2005)
-The faculty of information technology, Organization and maintenance of computer networks
+### REGIONAL MANAGEMENT CENTRE, Perm, <http://rmc.edu.ru/eng/> (2003 — 2005) - professional retraining
+The faculty of information technology <http://dit.perm.ru>, Organization and maintenance of computer networks
