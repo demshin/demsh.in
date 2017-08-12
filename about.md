@@ -17,6 +17,7 @@ web: <http://demshin.github.io>
 ### 360bound INC, USA, Kennesaw, GA, <http://360bound.com> (July 2017 - present time)
 #### QA
 - TestRail Implementation
+- Jira Administration
 - QA Team Managment
 - Writing technical regulations
 
