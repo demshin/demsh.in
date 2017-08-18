@@ -16,9 +16,9 @@ web: <http://demshin.github.io>
 
 ### 360bound INC, USA, Kennesaw, GA, <http://360bound.com> (July 2017 - present time)
 #### QA
-- TestRail Implementation
-- Jira Administration
 - QA Team Managment
+- [TestRail](http://www.gurock.com/testrail/) Implementation
+- Jira Administration
 - Writing technical regulations
 
 ### Pro IT Resource, Perm, <http://proitr.ru> (October 2015 - April 2017)
@@ -56,7 +56,7 @@ web: <http://demshin.github.io>
 
 # Technical Skills
 
-## Programming languages
+## Programming languages & other
 - Java
 - JavaScript
 - HTML
@@ -70,17 +70,19 @@ web: <http://demshin.github.io>
 - Unit Testing
 - TestNG
 - API Testing
+- [TestRail](http://www.gurock.com/testrail/)
 
 ## Tools, Frameworks and other computer skills
-- Selenium
-- Webdriver.IO
-- REST-Assured
-- EJB3
-- jQuery basics
-- AngularJS 1
-- NodeJS basics
-- IntelliJ IDEA, Sublime, Atom
-- Databases: PostgreSQL
+- [Selenium](http://www.seleniumhq.org)
+- [Webdriver.IO](http://webdriver.io)
+- [REST-Assured](http://rest-assured.io/)
+- [EJB3](http://ejb3.jboss.org)
+- [jQuery](http://jquery.com/) basics
+- [AngularJS](https://angularjs.org)
+- [NodeJS](http://nodejs.org/) basics
+- IntelliJ IDEA 
+- Sublime, Atom, VS Code
+- Databases: PostgreSQL, MySQL
 - Version control software: git (Gitlab, Github, Bitbucket)
 - OS: Mac OS X, Linux
 - Atlassian Jira, Confluence 
