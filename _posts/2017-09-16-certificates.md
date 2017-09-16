@@ -29,7 +29,8 @@ categories: openssl, certificates, https
 - нужно из пришедших файлов сертификата (файлы `my_domain.crt` и `my_domain.ca-bandle`) сгенерировать цепочку сертификатов с помощью команды `cat my_domain.crt my_domain.ca-bundle >> cert_chain.crt`
 - получившийся файл `cert_chain.crt` (его лучше переименовать, особенно если у вас несколько сайтов на сервере) и файл с ключом `my_domain.key` нужно скопировать на сервер с сайтом, например в директорию `/etc/nginx/cert/`
 - в конфиге nginx для этого домена настроить постоянную переадресацию 301 с http на https прописать пути к ключу и сертификату, включить ssl, прописать порт 443, вот вам кусок кофига:
-```nginx
+
+{% highlight nginx %}
 server {
   listen 80;
   server_name my_domain.com;
@@ -48,7 +49,8 @@ server {
 
   other settings
 }
-```
+{% endhighlight %}
+
 - останется перезапустить сервис nginx `sudo service nginx start`, если ошибок в конфиге не будет, то сервис успешно перезапустится и https заработает
 - с помощью сервиса https://www.sslshopper.com/ssl-checker.html проверьте, что на вашем сайте реально работает https
 
