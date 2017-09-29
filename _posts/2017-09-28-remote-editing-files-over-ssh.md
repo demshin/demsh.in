@@ -21,9 +21,9 @@ categories: ssh, vscode, remote
 
 ## Что конкретно нужно сделать
 
-0. Поставить VSCode. Думаю с этим справитесь. :)
-1. Поставить на него плагин [remote-vscode](https://marketplace.visualstudio.com/items?itemName=rafaelmaiolla.remote-vscode). Жмем `cmd+p` и вводим `ext install remote-vscode`, ну или любым другим способом.
-2. Настроить agent forwarding для нужного сервера. Для этого создаем файл `~/.ssh/config`, если еще нет, в него добавляем:
+- Поставить VSCode. Думаю с этим справитесь. :)
+- Поставить на него плагин [remote-vscode](https://marketplace.visualstudio.com/items?itemName=rafaelmaiolla.remote-vscode). Жмем `cmd+p` и вводим `ext install remote-vscode`, ну или любым другим способом.
+- Настроить agent forwarding для нужного сервера. Для этого создаем или редактируем файл `~/.ssh/config`, если еще нет, в него добавляем:
 {% highlight ssh %}
 Host server
   HostName 123.45.67.89
@@ -31,14 +31,17 @@ Host server
   ForwardAgent yes
   RemoteForward 52698 127.0.0.1:52698
 {% endhighlight %}
-3. Заходим на наш сервер `ssh -v server`, естественно там уже должны быть ключи или ввести пароль.
-4. Ставим rmate
+
+- Заходим на наш сервер `ssh -v server`, естественно там уже должны быть ключи или нужно ввести пароль.
+- Ставим rmate
+
 {% highlight bash %}
 sudo wget -O /usr/local/bin/rcode \
 https://raw.github.com/aurora/rmate/master/rmate
 chmod a+x /usr/local/bin/rcode
 {% endhighlight %}
 Делаем логаут.
-5. Заходим снова на сервер. По команде `rcode /path/to/file` редактируем и сохраняем файл в своем любимом VSCode.
 
-Естественно подобный трюк можно проделать практически с любым редактром кода. Удачи друзья.
+- Заходим снова на сервер. По команде `rcode /path/to/file` редактируем и сохраняем файл в своем любимом VSCode.
+
+Естественно подобный трюк можно проделать практически с любым редактром кода. Google поможет найти, как это сделать. Удачи друзья.
