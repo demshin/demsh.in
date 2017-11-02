@@ -7,7 +7,7 @@ categories: openssl, certificates, https
 
 ## Суть проблемы
 
-Недавно я описывал [как установить сертификат](demshin.github.io/openssl,/certificates,/https/2017/09/16/certificates.html).
+Недавно я описывал [как установить сертификат](./openssl,/certificates,/https/2017/09/16/certificates.html).
 Это простой способ для получения шифрованного соединения, но способ этот платный, т.к. за сертификат нужно платить.
 Но иногда (а на самом деле почти всегда) нам нужно получить **https** в процессе разработки. Для этого и существуют
 самоподписанные сертификаты (selfsigned certificates).
@@ -22,7 +22,7 @@ categories: openssl, certificates, https
 `
 
 Запустится визард, как при создании ключа и генерации запроса на создание сертфиката, с такими же вопросами. Подробнее
-в моей [статье](demshin.github.io/openssl,/certificates,/https/2017/09/16/certificates.html).
+в моей [статье](./openssl,/certificates,/https/2017/09/16/certificates.html).
 
 ### Настройка Nginx
 
