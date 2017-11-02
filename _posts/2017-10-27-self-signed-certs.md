@@ -2,7 +2,7 @@
 layout: post
 title:  "Установка самоподписанного сертификата"
 date:   2017-10-25 13:15:00 +0500
-categories: openssl, certificates, https
+categories: openssl certificates https
 ---
 
 ## Суть проблемы

@@ -2,7 +2,7 @@
 layout: post
 title:  "Установка RVM на macOS"
 date:   2017-07-07 22:22:22 +0500
-categories: rvm, ruby
+categories: rvm ruby
 ---
 
 Как видно из моего [резюме](http://demshin.github.io/about) я начал работать в компании [360bound](http://360bound.com). А там новый для меня стек технологий.

@@ -2,7 +2,7 @@
 layout: post
 title:  "Тестирование API"
 date:   2017-05-20 12:38:00 +0500
-categories: API, testing, Java
+categories: API testing Java
 ---
 
 Делаю очередное тестовое задание.

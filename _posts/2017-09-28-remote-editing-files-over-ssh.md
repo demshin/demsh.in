@@ -2,7 +2,7 @@
 layout: post
 title:  "Удалёное редактирование файлов через SSH"
 date:   2017-09-28 11:25:00 +0500
-categories: ssh, vscode, remote
+categories: ssh vscode remote
 ---
 
 # Удалёное редактирование файлов через SSH

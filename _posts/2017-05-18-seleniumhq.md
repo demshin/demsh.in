@@ -2,7 +2,7 @@
 layout: post
 title:  "Как я начал использовать Selenium"
 date:   2017-05-12 14:58:00 +0500
-categories: selenium, pageobjects
+categories: selenium pageobjects
 ---
 
 Пришлось мне однажды делать тестовое задание. В требованиях был Selenium, Java или C# и Page Objects.
