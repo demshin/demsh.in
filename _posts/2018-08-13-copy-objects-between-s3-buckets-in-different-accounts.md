@@ -80,8 +80,8 @@ categories: aws s3 s3bucket
 - [AWS CLI tool](https://aws.amazon.com/cli) (есть на каждом инстансе [EC2](https://aws.amazon.com/ec2‎))
 - Инстанс [EC2](https://aws.amazon.com/ec2‎) c Linux.
 
-Дальше куча вариантов при помощи консольной утилмты амазона. простейший вариант - скоприовать все:
+Дальше куча вариантов с помощью консольной утилиты амазона. Простейший - скоприовать все:
 
-`aws s3 mv s3://source/ s3://destination/ --recursive`
+`aws s3 cp s3://source/ s3://destination/ --recursive`
 
 Спасибо за внимание! Написать мне demshin@gmail.com или [@demshin](https://t.me/demshin).
