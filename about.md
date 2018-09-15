@@ -15,7 +15,7 @@ web: <http://demshin.github.io>
 
 ### 360bound INC, USA, Kennesaw, GA, <http://360bound.com> (July 2017 - present time)
 
-#### QA TechLead
+#### QA TechLead ()
 
 - QA Team Managment
 - [TestRail](http://www.gurock.com/testrail/) Implementation
@@ -23,15 +23,15 @@ web: <http://demshin.github.io>
 - Writing technical regulations for QA Team
 - QA process reorganization
 
-#### System Administrator
+#### System Engineer
 
 - Linux (Ubuntu)
 - Nginx
-- CI (Jenkins, [CircleCI](https://circleci.com)
+- CI (Jenkins, [CircleCI](https://circleci.com))
 - Docker (Docker Registry, Docker Compose)
 - AWS:
-  - tools: webconsole, awccli, terraform
-  - services: ec2, s3, cloudtrail, vps, rds, aim, etc
+  - Tools: webconsole, awccli, terraform
+  - Services: ec2, s3, cloudtrail, vps, rds, aim, etc
 
 ### Pro IT Resource, Perm, <http://proitr.ru> (October 2015 - April 2017)
 
