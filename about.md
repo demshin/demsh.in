@@ -9,13 +9,13 @@ permalink: /about/
 address: Russia, Perm
 email: [demshin@gmail.com](mailto:demshin@gmail.com)
 telegram: [@demshin](https://t.me/demshin)
-web: <http://demshin.github.io>
+web: <https://demshin.github.io>
 
 ## IT experience
 
 ### 360bound INC, USA, Kennesaw, GA, <http://360bound.com> (July 2017 - present time)
 
-#### QA TechLead ()
+#### QA TechLead (July 2017 - September 2017)
 
 - QA Team Managment
 - [TestRail](http://www.gurock.com/testrail/) Implementation
@@ -23,7 +23,7 @@ web: <http://demshin.github.io>
 - Writing technical regulations for QA Team
 - QA process reorganization
 
-#### System Engineer
+#### System Engineer (September 2017 - present time)
 
 - Linux (Ubuntu)
 - Nginx
