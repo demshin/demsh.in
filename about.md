@@ -74,6 +74,19 @@ web: <https://demshin.github.io>
 
 # Technical Skills
 
+## System Administration & DevOps
+
+- Linux
+- Nginx
+- Amazon Web Services
+- Googlr Cloud Platform
+- DigitalOcean
+- CI (GitLab, Jenkins, CircleCI)
+- Terraform
+- Ansible
+- SSL Certs
+- anf other :-)
+
 ## Programming languages & other
 
 - Java
@@ -97,13 +110,9 @@ web: <https://demshin.github.io>
 - [Selenium](http://www.seleniumhq.org)
 - [Webdriver.IO](http://webdriver.io)
 - [REST-Assured](http://rest-assured.io/)
-- [EJB3](http://ejb3.jboss.org)
-- [jQuery](http://jquery.com/) basics
-- [AngularJS](https://angularjs.org)
-- [NodeJS](http://nodejs.org/) basics
 - IntelliJ IDEA
-- Sublime, Atom, VS Code
-- Databases: PostgreSQL, MySQL
+- VS Code
+- Databases: PostgreSQL, MySQL, MongoDB
 - Version control software: git (Gitlab, Github, Bitbucket)
 - OS: Mac OS X, Linux
 - Atlassian Jira, Confluence
