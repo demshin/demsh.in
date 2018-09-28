@@ -29,9 +29,13 @@ web: <https://demshin.github.io>
 - Nginx
 - CI (Jenkins, [CircleCI](https://circleci.com))
 - Docker (Docker Registry, Docker Compose)
-- AWS:
+- [AWS](https://aws.amazon.com):
   - Tools: webconsole, awccli, terraform
   - Services: ec2, s3, cloudtrail, vps, rds, aim, etc
+- Implementing existing AWS Infrastucture in [Terrafrom](https://www.terraform.io)
+- Support AWS Infrastructure with [Terraform](https://www.terraform.io)
+- Monitoring & Alerting with [Datadog](https://www.datadoghq.com)
+- Implementing [HIPAA Compliance](https://en.wikipedia.org/wiki/Health_Insurance_Portability_and_Accountability_Act) on AWS
 
 ### Pro IT Resource, Perm, <http://proitr.ru> (October 2015 - April 2017)
 
