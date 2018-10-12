@@ -85,7 +85,7 @@ web: <https://demshin.github.io>
 - Terraform
 - Ansible
 - SSL Certs
-- anf other :-)
+- and other :-)
 
 ## Programming languages & other
 
@@ -124,6 +124,10 @@ web: <https://demshin.github.io>
 - easily communicate with people
 
 ## Education
+
+### Otus <https://otus.ru> 2018 - in progress
+
+DevOps practices and tools course
 
 ### GetJavaJob <http://www.getjavajob.com> 2015 - professional retraining
 
