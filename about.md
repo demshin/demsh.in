@@ -9,7 +9,7 @@ permalink: /about/
 address: Russia, Perm
 email: [demshin@gmail.com](mailto:demshin@gmail.com)
 telegram: [@demshin](https://t.me/demshin)
-web: <https://demshin.github.io>
+web: <https://demsh.in>
 
 ## IT experience
 

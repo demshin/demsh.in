@@ -4,7 +4,7 @@ https://keybase.io/demshin
 
 I hereby claim:
 
-  * I am an admin of https://demshin.github.io
+  * I am an admin of https://demsh.in
   * I am demshin (https://keybase.io/demshin) on keybase.
   * I have a public key ASAMeXuLTZbDipfg6EExB4swLPCJEfz3Edgwrvi86QZG3go
 
@@ -26,7 +26,7 @@ To do so, I am signing this object:
             "seqno": 1209564
         },
         "service": {
-            "hostname": "demshin.github.io",
+            "hostname": "demsh.in",
             "protocol": "https:"
         },
         "type": "web_service_binding",
