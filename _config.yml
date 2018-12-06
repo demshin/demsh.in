@@ -25,3 +25,5 @@ paginate_path: "page:num"
 
 # не публиковать посты, указанное время которых позднее времени момента публикации
 future: false
+
+theme: jekyll-theme-minimal
