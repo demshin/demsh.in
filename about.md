@@ -15,14 +15,6 @@ web: <https://demsh.in>
 
 ### 360bound INC, USA, Kennesaw, GA, <http://360bound.com> (July 2017 - present time)
 
-#### QA TechLead (July 2017 - September 2017)
-
-- QA Team Managment
-- [TestRail](http://www.gurock.com/testrail/) Implementation
-- Jira Administration
-- Writing technical regulations for QA Team
-- QA process reorganization
-
 #### System Engineer (September 2017 - present time)
 
 - Linux (Ubuntu)
@@ -36,6 +28,14 @@ web: <https://demsh.in>
 - Support AWS Infrastructure with [Terraform](https://www.terraform.io)
 - Monitoring & Alerting with [Datadog](https://www.datadoghq.com)
 - Implementing [HIPAA Compliance](https://en.wikipedia.org/wiki/Health_Insurance_Portability_and_Accountability_Act) on AWS
+
+#### QA TechLead (July 2017 - September 2017)
+
+- QA Team Managment
+- [TestRail](http://www.gurock.com/testrail/) Implementation
+- Jira Administration
+- Writing technical regulations for QA Team
+- QA process reorganization
 
 ### Pro IT Resource, Perm, <http://proitr.ru> (October 2015 - April 2017)
 
