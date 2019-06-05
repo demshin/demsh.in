@@ -6,4 +6,3 @@ categories: testing rest api
 ---
 
 [REST-Assures](http://rest-assured.io) - библиотека для тестирования RESTful API
-
