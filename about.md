@@ -32,12 +32,12 @@ web: <https://demsh.in>
 #### QA TechLead (July 2017 - September 2017)
 
 - QA Team Managment
-- [TestRail](http://www.gurock.com/testrail/) Implementation
+- [TestRail](https://www.gurock.com/testrail/) Implementation
 - Jira Administration
 - Writing technical regulations for QA Team
 - QA process reorganization
 
-### Pro IT Resource, Perm, <http://proitr.ru> (October 2015 - April 2017)
+### Pro IT Resource, Perm, <https://proitr.ru> (October 2015 - April 2017)
 
 #### QA Automation
 
@@ -49,8 +49,8 @@ web: <https://demsh.in>
 - Tools
   - Java
   - JavaScript
-  - [Selenium](http://seleniumhq.org)
-  - [Webdriver.IO](http://webdriver.io)
+  - [Selenium](https://www.seleniumhq.org)
+  - [Webdriver.IO](https://webdriver.io)
   - Docker
   - Selenium Grid
 - Scrum, Kanban
@@ -103,12 +103,12 @@ web: <https://demsh.in>
 - Unit Testing
 - TestNG
 - API Testing
-- [TestRail](http://www.gurock.com/testrail/)
+- [TestRail](https://www.gurock.com/testrail/)
 
 ## Tools, Frameworks and other computer skills
 
-- [Selenium](http://www.seleniumhq.org)
-- [Webdriver.IO](http://webdriver.io)
+- [Selenium](https://www.seleniumhq.org)
+- [Webdriver.IO](https://webdriver.io)
 - [REST-Assured](http://rest-assured.io/)
 - IntelliJ IDEA
 - VS Code
