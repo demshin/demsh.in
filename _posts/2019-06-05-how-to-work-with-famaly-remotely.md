@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Как работать в путешествии с семьей"
-date:   2017-09-30 01:47:00 +0500
+date:   2019-06-12 14:22:00 +0500
 categories: working travels family
 ---
 
