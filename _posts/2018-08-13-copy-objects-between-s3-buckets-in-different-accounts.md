@@ -5,7 +5,7 @@ date: 2018-08-13 15:50:00 +0500
 categories: aws s3 s3bucket
 ---
 
-# Введение
+## Введение
 
 На текущем проекте используем известные решительно всем [AWS](https://aws.amazon.com) - Amazon Web Services. Там есть решительно все, что нужно для современных веб-сервисов. В заметке пойдет речь об одном из сервисов Amazon, [S3](https://aws.amazon.com/s3) - Simple Storage Services.
 
@@ -80,8 +80,8 @@ categories: aws s3 s3bucket
 - [AWS CLI tool](https://aws.amazon.com/cli) (есть на каждом инстансе [EC2](https://aws.amazon.com/ec2‎))
 - Инстанс [EC2](https://aws.amazon.com/ec2‎) c Linux.
 
-Дальше куча вариантов с помощью консольной утилиты амазона. Простейший - скоприовать все:
+Дальше куча вариантов с помощью консольной утилиты AWS. Простейший - скопировать все:
 
 `aws s3 cp s3://source/ s3://destination/ --recursive`
 
-Спасибо за внимание! Написать мне demshin@gmail.com или [@demshin](https://t.me/demshin).
+Спасибо за внимание! Написать мне [demshin@gmail.com](mailto: demshin@gmail.com) или [@demshin](https://t.me/demshin).
