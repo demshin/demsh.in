@@ -6,6 +6,7 @@ categories: API testing Java
 ---
 
 Делаю очередное тестовое задание.
+
 ## Задача
 
 написать автотесты для API. Как известно я знаю Java и инфраструктуру вокруг нее, поэтому начал искать подходящий инструмент.
@@ -13,6 +14,7 @@ categories: API testing Java
 ## Выбор инструмента
 
 Нагуглил два:
+
 - [Rest-assured](http://rest-assured.io), [github](https://github.com/rest-assured/rest-assured);
 - часть фреймворка [Jersey](https://jersey.github.io) для создания RESTful API - [Jersey Test Framework](https://github.com/jersey/jersey/tree/master/test-framework).
 
