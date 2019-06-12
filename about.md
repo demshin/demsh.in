@@ -7,7 +7,7 @@ permalink: /about/
 # Aleksandr Demshin
 
 address: Russia, Perm
-email: [demshin@gmail.com](mailto:demshin@gmail.com)
+email: [aleksandr@demsh.in](mailto:aleksandr@demsh.in)
 telegram: [@demshin](https://t.me/demshin)
 web: <https://demsh.in>
 
@@ -125,7 +125,7 @@ web: <https://demsh.in>
 
 ## Education
 
-### Otus <https://otus.ru> 2018 - in progress
+### Otus <https://otus.ru> 2018 - 2019
 
 DevOps practices and tools course
 
