@@ -4,7 +4,7 @@ title: CV
 permalink: /about/
 ---
 
-# Aleksandr Demshin
+## Aleksandr Demshin
 
 address: Russia, Perm
 email: [aleksandr@demsh.in](mailto:aleksandr@demsh.in)
@@ -22,16 +22,16 @@ web: <https://demsh.in>
 - CI (Jenkins, [CircleCI](https://circleci.com))
 - Docker (Docker Registry, Docker Compose)
 - [AWS](https://aws.amazon.com):
-  - Tools: webconsole, awccli, terraform
-  - Services: ec2, s3, cloudtrail, vps, rds, aim, etc
-- Implementing existing AWS Infrastucture in [Terrafrom](https://www.terraform.io)
+  - Tools: web console, awccli, terraform
+  - Services: EC2, S3, CloudTrail, VPS, RDS, IAM, etc
+- Implementing existing AWS Infrastructure in [Terraform](https://www.terraform.io)
 - Support AWS Infrastructure with [Terraform](https://www.terraform.io)
-- Monitoring & Alerting with [Datadog](https://www.datadoghq.com)
+- Monitoring & Alerting with [DataDog](https://www.datadoghq.com)
 - Implementing [HIPAA Compliance](https://en.wikipedia.org/wiki/Health_Insurance_Portability_and_Accountability_Act) on AWS
 
 #### QA TechLead (July 2017 - September 2017)
 
-- QA Team Managment
+- QA Team Management
 - [TestRail](https://www.gurock.com/testrail/) Implementation
 - Jira Administration
 - Writing technical regulations for QA Team
@@ -72,14 +72,14 @@ web: <https://demsh.in>
   - Network topology
   - Cable systems
 
-# Technical Skills
+## Technical Skills
 
-## System Administration & DevOps
+### System Administration & DevOps
 
 - Linux
 - Nginx
 - Amazon Web Services
-- Googlr Cloud Platform
+- Google Cloud Platform
 - DigitalOcean
 - CI (GitLab, Jenkins, CircleCI)
 - Terraform
@@ -87,7 +87,7 @@ web: <https://demsh.in>
 - SSL Certs
 - and other :-)
 
-## Programming languages & other
+### Programming languages & other
 
 - Java
 - JavaScript
@@ -96,7 +96,7 @@ web: <https://demsh.in>
 - Basics of SQL
 - Basics of Python
 
-## Testing
+### Testing
 
 - Functional Testing
 - Automated UI Testing
@@ -105,7 +105,7 @@ web: <https://demsh.in>
 - API Testing
 - [TestRail](https://www.gurock.com/testrail/)
 
-## Tools, Frameworks and other computer skills
+### Tools, Frameworks and other computer skills
 
 - [Selenium](https://www.seleniumhq.org)
 - [Webdriver.IO](https://webdriver.io)
@@ -113,7 +113,7 @@ web: <https://demsh.in>
 - IntelliJ IDEA
 - VS Code
 - Databases: PostgreSQL, MySQL, MongoDB
-- Version control software: git (Gitlab, Github, Bitbucket)
+- Version control software: git (GitLab, Github, BitBucket)
 - OS: Mac OS X, Linux
 - Atlassian Jira, Confluence
 
