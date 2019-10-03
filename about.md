@@ -13,7 +13,19 @@ web: <https://demsh.in>
 
 ## IT experience
 
-### 360bound INC, USA, Kennesaw, GA, <http://360bound.com> (July 2017 - present time)
+### Debitrum, USA, Amherst, NY, <http://www.debitrum.com>, (November 2018 - present time), remotely
+
+#### System Engineer
+
+- Supporting infrastructure with [Terraform](https://www.terraform.io) on AWS
+- Supporting Linux (Ubuntu) servers
+- CI ([Bitbucket Pipelines](https://bitbucket.org/product/features/pipelines))
+- [Ansible](https://www.ansible.com)
+- [Kubernetes](https://kubernetes.io)
+- Docker Registry, also [AWS ECR](https://aws.amazon.com/ecr/)
+- [Hashicorp Vault](https://www.vaultproject.io)
+
+### 360bound INC, USA, Kennesaw, GA, <http://360bound.com> (July 2017 - present time), remotely
 
 #### System Engineer (September 2017 - present time)
 
@@ -37,7 +49,7 @@ web: <https://demsh.in>
 - Writing technical regulations for QA Team
 - QA process reorganization
 
-### Pro IT Resource, Perm, <https://proitr.ru> (October 2015 - April 2017)
+### Pro IT Resource, Perm, <https://proitr.ru> (October 2015 - April 2017), in house
 
 #### QA Automation
 
@@ -56,7 +68,7 @@ web: <https://demsh.in>
 - Scrum, Kanban
 - Writing Technical Documentation
 
-### REGIONAL MANAGEMENT CENTRE, Perm, <http://rmc.edu.ru/eng/> (October 2003 — December 2011)
+### REGIONAL MANAGEMENT CENTRE, Perm, <http://rmc.edu.ru/eng/> (October 2003 — December 2011), in house
 
 #### Lecturer
 
