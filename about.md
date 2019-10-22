@@ -13,7 +13,7 @@ web: <https://demsh.in>
 
 ## IT experience
 
-### Debitrum, USA, Amherst, NY, <http://www.debitrum.com>, (November 2018 - present time), remotely
+### Aibion Technologies, (November 2018 - present time), remotely
 
 #### System Engineer
 
