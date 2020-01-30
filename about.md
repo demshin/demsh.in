@@ -13,7 +13,7 @@ web: <https://demsh.in>
 
 ## IT experience
 
-### Aibion Technologies, (November 2018 - present time), remotely
+### TRegistry, (November 2018 - present time), remotely
 
 #### System Engineer
 
