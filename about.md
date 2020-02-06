@@ -25,7 +25,7 @@ web: <https://demsh.in>
 - Docker Registry, also [AWS ECR](https://aws.amazon.com/ecr/)
 - [Hashicorp Vault](https://www.vaultproject.io)
 
-### 360bound INC, USA, Kennesaw, GA, <http://360bound.com> (July 2017 - present time), remotely
+### 360bound INC, USA, Kennesaw, GA, <https://360bound.com> (July 2017 - present time), remotely
 
 #### System Engineer (September 2017 - present time)
 
@@ -68,7 +68,7 @@ web: <https://demsh.in>
 - Scrum, Kanban
 - Writing Technical Documentation
 
-### REGIONAL MANAGEMENT CENTRE, Perm, <http://rmc.edu.ru/eng/> (October 2003 — December 2011), in house
+### REGIONAL MANAGEMENT CENTRE, Perm, <https://rmc.edu.ru/eng/> (October 2003 — December 2011), in house
 
 #### Lecturer
 
@@ -147,13 +147,13 @@ First part of course.
 
 Thank you very much Vitaly! :-)
 
-### PERM NATIONAL RESEARCH POLYTECHNIC UNIVERSITY, <http://pstu.ru/en/>, (2005 - 2010) - incomplete higher education
+### PERM NATIONAL RESEARCH POLYTECHNIC UNIVERSITY, <https://pstu.ru/en/>, (2005 - 2010) - incomplete higher education
 
 Electrical Engineering Faculty
 
 Speciality "Automatics and telemechanics"
 
-### REGIONAL MANAGEMENT CENTRE, Perm, <http://rmc.edu.ru/eng/> (2003 — 2005) - professional retraining
+### REGIONAL MANAGEMENT CENTRE, Perm, <https://rmc.edu.ru/eng/> (2003 — 2005) - professional retraining
 
 The faculty of information technology <http://dit.perm.ru>
 
