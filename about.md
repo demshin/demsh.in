@@ -13,7 +13,7 @@ web: <https://demsh.in>
 
 ## IT experience
 
-### TRegistry, (November 2018 - present time), remotely
+### Transparency Registry, (November 2018 - present time), remotely
 
 #### System Engineer
 
