@@ -78,7 +78,6 @@ web: <https://demsh.in>
   - OSI model
   - TCP/IP
   - Network protocols
-  - Network topology
   - Cable systems
 
 ## Technical Skills
