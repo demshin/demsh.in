@@ -7,8 +7,11 @@ permalink: /about/
 ## Aleksandr Demshin
 
 address: Russia, Perm
+
 email: [aleksandr@demsh.in](mailto:aleksandr@demsh.in)
+
 telegram: [@demshin](https://t.me/demshin)
+
 web: <https://demsh.in>
 
 ## IT experience
