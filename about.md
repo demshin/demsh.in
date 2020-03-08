@@ -86,6 +86,8 @@ web: <https://demsh.in>
 ### System Administration & DevOps
 
 - Linux
+  - Ubuntu
+  - CentOS
 - Nginx
 - Amazon Web Services
 - Google Cloud Platform
