@@ -77,9 +77,6 @@ web: <https://demsh.in>
   - Network Topology
   - OSI model
   - TCP/IP
-- Tools
-  - Windows Server 2000, 2003
-  - Active Directory
   - Network protocols
   - Network topology
   - Cable systems
@@ -96,7 +93,6 @@ web: <https://demsh.in>
 - CI (GitLab, Jenkins, CircleCI)
 - Terraform
 - Ansible
-- SSL Certs
 - and other :-)
 
 ### Programming languages & other
