@@ -120,8 +120,6 @@ web: <https://demsh.in>
 - [Selenium](https://www.seleniumhq.org)
 - [Webdriver.IO](https://webdriver.io)
 - [REST-Assured](http://rest-assured.io/)
-- IntelliJ IDEA
-- VS Code
 - Databases: PostgreSQL, MySQL, MongoDB
 - Version control software: git (GitLab, Github, BitBucket)
 - OS: Mac OS X, Linux
