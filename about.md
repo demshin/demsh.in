@@ -139,6 +139,10 @@ web: <https://demsh.in>
 
 ### Otus <https://otus.ru> 2018 - 2019
 
+Linux Administrator course
+
+### Otus <https://otus.ru> 2020 - current time
+
 DevOps practices and tools course
 
 ### GetJavaJob <http://www.getjavajob.com> 2015 - professional retraining
