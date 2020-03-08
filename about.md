@@ -101,6 +101,8 @@ web: <https://demsh.in>
 
 ### Programming languages & other
 
+- Bash
+- YAML
 - Java
 - JavaScript
 - HTML
