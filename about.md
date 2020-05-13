@@ -16,38 +16,48 @@ web: <https://demsh.in>
 
 ## IT experience
 
-### Transparency Registry, (November 2018 - present time), remotely
+### Paragon Software, <https://www.paragon-software.com/> (April 2020 - present time), remotely
 
 #### System Engineer
 
-- Supporting infrastructure with [Terraform](https://www.terraform.io) on AWS
+- Supporting infrastructure on Azure
+- Kubernetes
+- Ansible
+- Prometheus
+- Grafana
+
+### Transparency Registry, (November 2018 - April 2020), remotely
+
+#### System Engineer
+
+- Supporting infrastructure with Terraform on AWS
 - Supporting Linux (Ubuntu) servers
-- CI ([Bitbucket Pipelines](https://bitbucket.org/product/features/pipelines))
-- [Ansible](https://www.ansible.com)
-- [Kubernetes](https://kubernetes.io)
+- CI (Bitbucket Pipelines)
+- Ansible
+- Kubernetes
 - Docker Registry, also [AWS ECR](https://aws.amazon.com/ecr/)
-- [Hashicorp Vault](https://www.vaultproject.io)
+- Hashicorp Vault
 
 ### 360bound INC, USA, Kennesaw, GA, <https://360bound.com> (July 2017 - present time), remotely
 
 #### System Engineer (September 2017 - present time)
 
-- Linux (Ubuntu)
+- Linux (Ubuntu, CentOS 6)
 - Nginx
-- CI (Jenkins, [CircleCI](https://circleci.com))
+- CI (Jenkins, CircleCI)
 - Docker (Docker Registry, Docker Compose)
-- [AWS](https://aws.amazon.com):
+- AWS:
   - Tools: web console, awccli, terraform
   - Services: EC2, S3, CloudTrail, VPS, RDS, IAM, etc
-- Implementing existing AWS Infrastructure in [Terraform](https://www.terraform.io)
-- Support AWS Infrastructure with [Terraform](https://www.terraform.io)
-- Monitoring & Alerting with [DataDog](https://www.datadoghq.com)
+- Implementing existing AWS Infrastructure in Terraform
+- Support AWS Infrastructure with Terraform
+- Monitoring & Alerting with DataDog
 - Implementing [HIPAA Compliance](https://en.wikipedia.org/wiki/Health_Insurance_Portability_and_Accountability_Act) on AWS
 
 #### QA TechLead (July 2017 - September 2017)
 
 - QA Team Management
-- [TestRail](https://www.gurock.com/testrail/) Implementation
+- TestRail Implementation
 - Jira Administration
 - Writing technical regulations for QA Team
 - QA process reorganization
@@ -64,8 +74,8 @@ web: <https://demsh.in>
 - Tools
   - Java
   - JavaScript
-  - [Selenium](https://www.seleniumhq.org)
-  - [Webdriver.IO](https://webdriver.io)
+  - Selenium
+  - Webdriver.IO
   - Docker
   - Selenium Grid
 - Scrum, Kanban
@@ -87,53 +97,29 @@ web: <https://demsh.in>
 
 ### System Administration & DevOps
 
-- Linux
-  - Ubuntu
-  - CentOS
+- Linux (Ubuntu, CentOS)
 - Nginx
-- Amazon Web Services
-- Google Cloud Platform
-- DigitalOcean
+- Cloud Platforms (Amazon Web Services, Google Cloud Platform, DigitalOcean)
 - CI (GitLab, Jenkins, CircleCI)
-- Terraform
-- Ansible
+- IaaC (Terraform, Ansible)
+- Kubernetes
 - and other :-)
 
 ### Programming languages & other
 
-- Bash
-- YAML
-- Java
-- JavaScript
-- HTML
-- Basics of CSS
-- Basics of SQL
-- Basics of Python
+Bash, YAML, JavaScript, HTML, Basics of CSS, Basics of SQL, Basics of Python
 
 ### Testing
 
-- Functional Testing
-- Automated UI Testing
-- Unit Testing
-- TestNG
-- API Testing
-- [TestRail](https://www.gurock.com/testrail/)
+Functional Testing, automated UI Testing, Unit Testing, TestNG, API Testing, TestRail
 
-### Tools, Frameworks and other computer skills
+### Tools, Frameworks and other technical skills
 
-- [Selenium](https://www.seleniumhq.org)
-- [Webdriver.IO](https://webdriver.io)
-- [REST-Assured](http://rest-assured.io/)
-- Databases: PostgreSQL, MySQL, MongoDB
-- Version control software: git (GitLab, Github, BitBucket)
-- OS: Mac OS X, Linux
-- Atlassian Jira, Confluence
+Selenium, Webdriver.IO, REST-Assured, Databases (PostgreSQL, MySQL, MongoDB), Version control software (git, GitLab, Github, BitBucket), Atlassian Jira, Confluence
 
 ## Other skills
 
-- very good Russian
-- reading technical documentation on English
-- easily communicate with people
+Very good Russian, reading technical documentation on English, easily communicate with people.
 
 ## Education
 
