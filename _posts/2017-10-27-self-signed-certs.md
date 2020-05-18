@@ -20,8 +20,7 @@ categories: openssl certificates https
 
 ### Создание SSL-сертификата
 
-`sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/nginx/crt/yourdomain.key -out /etc/nginx/crt/yourdomain.crt
-`
+`sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/nginx/crt/yourdomain.key -out /etc/nginx/crt/yourdomain.crt`
 
 Запустится визард, как при создании ключа и генерации запроса на создание сертфиката, с такими же вопросами. Подробнее
 в моей [статье]({% post_url 2017-09-28-remote-editing-files-over-ssh %}).
