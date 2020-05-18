@@ -71,13 +71,7 @@ web: <https://demsh.in>
 - Writing Test Cases
 - Bug Reporting
 - Bug Fixing Control
-- Tools
-  - Java
-  - JavaScript
-  - Selenium
-  - Webdriver.IO
-  - Docker
-  - Selenium Grid
+- Tools: Java, JavaScript, Selenium, Webdriver.IO, Docker, Selenium Grid
 - Scrum, Kanban
 - Writing Technical Documentation
 
@@ -86,24 +80,13 @@ web: <https://demsh.in>
 #### Lecturer
 
 - the Department of information technology
-- the course "Basics of computer networking"
-  - Network Topology
-  - OSI model
-  - TCP/IP
-  - Network protocols
-  - Cable systems
+- the course "Basics of computer networking" (Network Topology, OSI model, TCP/IP, Network protocols, Cable systems)
 
 ## Technical Skills
 
 ### System Administration & DevOps
 
-- Linux (Ubuntu, CentOS)
-- Nginx
-- Cloud Platforms (Amazon Web Services, Google Cloud Platform, DigitalOcean)
-- CI (GitLab, Jenkins, CircleCI)
-- IaaC (Terraform, Ansible)
-- Kubernetes
-- and other :-)
+Linux (Ubuntu, CentOS), Docker (Docker Compose), Nginx, Cloud Platforms (Amazon Web Services, Google Cloud Platform, DigitalOcean), CI (GitLab, Jenkins, CircleCI), Infustructure as a Code (Terraform, Ansible), Kubernetes and other :-)
 
 ### Programming languages & other
 
@@ -123,13 +106,11 @@ Very good Russian, reading technical documentation on English, easily communicat
 
 ## Education
 
-### Otus <https://otus.ru> 2018 - 2019
+### Otus <https://otus.ru>
 
-Linux Administrator course
+[Linux Administrator course](https://otus.ru/lessons/linux/) 2020
 
-### Otus <https://otus.ru> 2020 - current time
-
-DevOps practices and tools course
+[DevOps practices and tools course](https://otus.ru/lessons/devops-praktiki-i-instrumenty/) 2019
 
 ### GetJavaJob <http://www.getjavajob.com> 2015 - professional retraining
 
