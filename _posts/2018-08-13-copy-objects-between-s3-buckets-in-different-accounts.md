@@ -5,8 +5,6 @@ date: 2018-08-13 15:50:00 +0500
 categories: aws s3 s3bucket
 ---
 
-## Введение
-
 На текущем проекте используем известные решительно всем [AWS](https://aws.amazon.com) - Amazon Web Services. Там есть решительно все, что нужно для современных веб-сервисов. В заметке пойдет речь об одном из сервисов Amazon, [S3](https://aws.amazon.com/s3) - Simple Storage Services.
 
 ## Боль
