@@ -16,12 +16,12 @@ web: <https://demsh.in>
 
 ## IT experience
 
-### Paragon Software, <https://www.paragon-software.com/> (April 2020 - present time), remotely
+### Paragon Software, <https://www.paragon-software.com/> (April 2020 - September 2020), remotely
 
 #### System Engineer
 
 - Supporting infrastructure on Azure
-- Kubernetes
+- Kubernetes (AKS & from hard)
 - Ansible
 - Prometheus
 - Grafana
@@ -40,7 +40,7 @@ web: <https://demsh.in>
 
 ### 360bound INC, USA, Kennesaw, GA, <https://360bound.com> (July 2017 - present time), remotely
 
-#### System Engineer (September 2017 - present time)
+#### System Engineer (September 2017 - September 2020)
 
 - Linux (Ubuntu, CentOS 6)
 - Nginx
