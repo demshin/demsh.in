@@ -12,8 +12,6 @@ email: [aleksandr@demsh.in](mailto:aleksandr@demsh.in)
 
 telegram: [@demshin](https://t.me/demshin)
 
-web: <https://demsh.in>
-
 ## IT experience
 
 ### Paragon Software, <https://www.paragon-software.com/> (April 2020 - September 2020), remotely
