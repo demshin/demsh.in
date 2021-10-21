@@ -36,7 +36,7 @@ telegram: [@demshin](https://t.me/demshin)
 - Docker Registry, also [AWS ECR](https://aws.amazon.com/ecr/)
 - Hashicorp Vault
 
-### 360bound INC, USA, Kennesaw, GA, <https://360bound.com> (July 2017 - present time), remotely
+### 360bound INC, USA, Kennesaw, GA, <https://360bound.com> (July 2017 - September 2020), remotely
 
 #### System Engineer (September 2017 - September 2020)
 
