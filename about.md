@@ -14,6 +14,10 @@ telegram: [@demshin](https://t.me/demshin)
 
 ## IT experience
 
+### BTS Digital, <https://btsdigital.kz> (October 2020 - current time), remotely
+
+#### DevOps Team Lead
+
 ### Paragon Software, <https://www.paragon-software.com/> (April 2020 - September 2020), remotely
 
 #### System Engineer
