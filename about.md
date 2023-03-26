@@ -18,12 +18,29 @@ telegram: [@demshin](https://t.me/demshin)
 
 #### DevOps Team Lead
 
+- DevOps Team Management
+- Infrastructure Planning
+- Architecture Design & Documentation
+- Interacting with Customers
+- Interacting with Developers
+- Supporting Applications with Digital ID Technologies [Passport](https://passport.aitu.io/), [Digital ID](https://did.gov.kz), etc
+- CA Accreditation for Kazakhstan government requirements
+- Kubernetes Clusters Administration (Kubespray, Helm 3, Terraform)
+- GitLab CI/CD
+- CloudFlare (Web Application Firewall, DNS)
+- Hashicorp Vault
+- Ansible
+- OpenStack (OpenStack CLI, Terraform)
+- PostgreSQL
+- CentOS 8
+- Monitoring & Alerting with Prometheus, Grafana, VictoriaMetrics, etc.
+
 ### Paragon Software, <https://www.paragon-software.com/> (April 2020 - September 2020), remotely
 
 #### System Engineer
 
 - Supporting infrastructure on Azure
-- Kubernetes (AKS & from hard)
+- Kubernetes (AKS & Kubespray)
 - Ansible
 - Prometheus
 - Grafana
@@ -49,7 +66,7 @@ telegram: [@demshin](https://t.me/demshin)
 - CI (Jenkins, CircleCI)
 - Docker (Docker Registry, Docker Compose)
 - AWS:
-  - Tools: web console, awccli, terraform
+  - Tools: web console, awscli, terraform
   - Services: EC2, S3, CloudTrail, VPS, RDS, IAM, etc
 - Implementing existing AWS Infrastructure in Terraform
 - Support AWS Infrastructure with Terraform
@@ -88,7 +105,7 @@ telegram: [@demshin](https://t.me/demshin)
 
 ### System Administration & DevOps
 
-Linux (Ubuntu, CentOS), Docker (Docker Compose), Nginx, Cloud Platforms (Amazon Web Services, Google Cloud Platform, DigitalOcean), CI (GitLab, Jenkins, CircleCI), Infustructure as a Code (Terraform, Ansible), Kubernetes and other :-)
+Kubernetes, Docker (Docker Compose), Linux (Ubuntu, CentOS), Nginx, Cloud Platforms (Amazon Web Services, Google Cloud Platform, DigitalOcean), CI (GitLab, Jenkins, CircleCI), Infrastructure as a Code (Terraform, Ansible),  and other :-)
 
 ### Programming languages & other
 
@@ -109,6 +126,8 @@ Very good Russian, reading technical documentation on English, easily communicat
 ## Education
 
 ### Otus <https://otus.ru>
+
+[Kubernetes course](https://otus.ru/lessons/infrastrukturnaya-platforma-na-osnove-kubernetes/) 2021
 
 [Linux Administrator course](https://otus.ru/lessons/linux/) 2020
 
