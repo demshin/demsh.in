@@ -29,3 +29,5 @@ paginate_path: "page:num"
 future: false
 
 theme: jekyll-theme-minimal
+plugins:
+  - jekyll-redirect-from
