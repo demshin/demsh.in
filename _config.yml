@@ -15,6 +15,7 @@ url: "https://demsh.in" # the base hostname & protocol for your site
 # twitter_username: demshin
 github_username: demshin
 lang: ru
+google_analytics_id: G-XKK8ZMW7D2
 
 # Build settings
 markdown: kramdown
@@ -30,3 +31,4 @@ future: false
 theme: jekyll-theme-minimal
 plugins:
   - jekyll-paginate
+  - jekyll-redirect-from
