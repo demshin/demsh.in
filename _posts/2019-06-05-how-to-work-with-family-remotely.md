@@ -4,7 +4,7 @@ title:  "Как работать в путешествии с семьей"
 date:   2019-06-12 14:22:00 +0500
 categories: working travels family
 redirect_from:
-  - /working/travels/family/2019/06/12/how-to-work-with-famaly-remotely.html
+  - /working/travels/family/2019/06/12/how-to-work-with-family-remotely.html
 ---
 
 В [telegram-чате](https://t.me/joinchat/AAAAAAo-Vju7cjFSfjZeeg) [otus.ru](https://otus.ru) меня попросили написать, как путешествовать с детьми и при этом работать удаленно. Ниже я попытаюсь это сделать.
