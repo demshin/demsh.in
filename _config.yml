@@ -31,3 +31,4 @@ future: false
 theme: jekyll-theme-minimal
 plugins:
   - jekyll-redirect-from
+  - jekyll-sitemap
