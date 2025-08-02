@@ -3,3 +3,7 @@ _site
 .jekyll-metadata
 .idea/
 .vscode/
+
+# Claude Code working files
+CLAUDE.md
+todo.md
