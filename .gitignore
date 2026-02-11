@@ -8,3 +8,8 @@ _site
 CLAUDE.md
 todo.md
 .claude
+
+# ralphex progress logs
+progress*.txt
+MIGRATION_PLAN.md
+docs/plans/*
