@@ -14,7 +14,26 @@ telegram: [@demshin](https://t.me/demshin)
 
 ## IT experience
 
-### BTS Digital, <https://btsdigital.kz> (October 2020 - current time), remotely
+### National Processing Center of Kazakhstan (NPCK), <https://npck.kz> (September 2023 - current time), remotely
+
+#### DevOps Team Lead
+
+- Leading a DevOps team of 3 engineers; hired two of them, most of the team followed me from the previous company
+- DevOps for the department's product line: digital identity data exchange, interbank payments & transfers (Open API), government data gateway, analytics platform
+- Infrastructure roadmap, capacity planning and yearly budgeting (hardware, OS and virtualization licenses)
+- Bringing systems through acceptance testing into production operation: documentation packages, security checklists, penetration test remediation plans
+- Data center projects: moving services to a Tier III data center and to the disaster recovery site, together with network, storage and security teams
+- Migration of the virtualization fleet from VMware to Proxmox with VM lifecycle under Terraform
+- PostgreSQL HA: migration from master/replica to Patroni clusters with pgBackRest backups and PITR
+- GitOps platform: Kubernetes clusters per environment (Kubespray), ArgoCD, HashiCorp Vault, shared GitLab CI templates
+- Business continuity and disaster recovery plans and their regular testing; backup schedules and retention policies
+- Security & compliance under National Bank requirements: access matrices, quarterly vulnerability scanning and remediation, evaluation of container security and PAM solutions
+- Observability: VictoriaMetrics, Grafana, Alertmanager, ELK, Sentry; alert routing by ownership, alert noise reduction, duty shift dashboards
+- Capacity planning for the payment platform growth (sizing for 1M transactions per day)
+- Introducing AI-assisted operations into the team's daily work (Claude Code with production guardrails)
+- Interacting with development team leads, security, network and data center teams
+
+### BTS Digital, <https://btsdigital.kz> (October 2020 - August 2023), remotely
 
 #### DevOps Team Lead
 
