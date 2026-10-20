@@ -18,7 +18,7 @@ telegram: [@demshin](https://t.me/demshin)
 
 #### DevOps Team Lead
 
-- Leading a DevOps team of 3 engineers; hired two of them, most of the team followed me from the previous company
+- DevOps Team Management, including hiring
 - DevOps for the department's product line: digital identity data exchange, interbank payments & transfers (Open API), government data gateway, analytics platform
 - Infrastructure roadmap, capacity planning and yearly budgeting (hardware, OS and virtualization licenses)
 - Bringing systems through acceptance testing into production operation: documentation packages, security checklists, penetration test remediation plans
