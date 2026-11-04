@@ -21,9 +21,14 @@ google_analytics_id: G-XKK8ZMW7D2
 markdown: kramdown
 timezone: Asia/Yekaterinburg
 
-# Local agent instructions are not part of the published site.
+# Local agent instructions, plans, and progress logs are not site content.
 exclude:
   - AGENTS.md
+  - CLAUDE.md
+  - todo.md
+  - MIGRATION_PLAN.md
+  - progress*.txt
+  - docs/plans
 
 # Publish compressed CSS without build-path source maps.
 sass:
