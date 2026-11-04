@@ -75,6 +75,23 @@ External actions remain pinned by SHA. The site URL and base path come from
 workflow`, custom domain `demsh.in`, and HTTPS enforcement. No DNS change is
 needed. `.github/` scripts and instructions are excluded from Jekyll output.
 
+## Sass maintenance
+
+`css/main.scss` loads the site's modules with `@use`; shared variables and
+the responsive mixin live in `_sass/_settings.scss`. Use `sass:math` for
+division and `sass:color` for color adjustments. Retired Sass imports,
+global built-ins, color functions, and slash division are fatal compilation
+errors rather than silenced warnings.
+
+The local `assets/css/style.scss` and `_sass/jekyll-theme-minimal.scss`
+override the theme's Sass entry points. The latter copies theme 0.2.0 with
+only its two imports changed to `@use`; fonts and highlighting modules still
+come from the pinned gem. Its original CC0 license is adjacent. Revisit this
+override when updating the theme and compare generated CSS and appearance.
+The existing theme CSS, font, image, and script URLs remain available.
+
+Local `AGENTS.md` is excluded from the generated site.
+
 ## Rollback
 
 Keep verified published-site archives, reports, and saved Pages settings in
