@@ -21,10 +21,19 @@ google_analytics_id: G-XKK8ZMW7D2
 markdown: kramdown
 timezone: Asia/Yekaterinburg
 
+# Local agent instructions are not part of the published site.
+exclude:
+  - AGENTS.md
+
 # Publish compressed CSS without build-path source maps.
 sass:
   style: compressed
   sourcemap: never
+  fatal_deprecations:
+    - import
+    - global-builtin
+    - color-functions
+    - slash-div
 
 # При выводе всех постов на одной странице используем постраничный вывод
 paginate: 5
