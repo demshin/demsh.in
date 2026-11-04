@@ -1,9 +1,9 @@
-name: Site build validation
+name: Site build and deployment
 
 on:
   pull_request:
   push:
-    branches: [master, ci/pages-build-validation]
+    branches: [master, ci/pages-actions-deployment]
   workflow_dispatch:
 
 permissions:
@@ -15,7 +15,7 @@ defaults:
 
 concurrency:
   group: site-validation-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: ${{ github.ref != 'refs/heads/master' }}
 
 jobs:
   compare:
@@ -54,6 +54,11 @@ jobs:
       - name: Compare generated files
         run: |
           python3 .github/scripts/compare_sites.py "$RUNNER_TEMP/site-legacy" "$RUNNER_TEMP/site-candidate" --report "$RUNNER_TEMP/comparison.json" | tee "$RUNNER_TEMP/comparison.txt"
+      - name: Package the verified site for Pages
+        uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4
+        with:
+          path: ${{ runner.temp }}/site-candidate
+          retention-days: 30
       - name: Save both builds and comparison evidence
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
@@ -68,3 +73,19 @@ jobs:
             ${{ runner.temp }}/build-time.yml
             ${{ runner.temp }}/source-sha.txt
             ${{ runner.temp }}/comparison.*
+
+  deploy:
+    if: github.ref == 'refs/heads/master' && vars.PAGES_DEPLOY_ENABLED == 'true'
+    needs: compare
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish the verified artifact
+        id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5
