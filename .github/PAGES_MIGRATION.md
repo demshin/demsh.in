@@ -90,7 +90,9 @@ come from the pinned gem. Its original CC0 license is adjacent. Revisit this
 override when updating the theme and compare generated CSS and appearance.
 The existing theme CSS, font, image, and script URLs remain available.
 
-Local `AGENTS.md` is excluded from the generated site.
+Local agent instructions, migration plans, todo notes, and progress logs are
+excluded from the generated site. Jekyll does not inherit `.gitignore` rules;
+keep the local-only paths listed in `_config.yml` as well.
 
 ## Rollback
 
