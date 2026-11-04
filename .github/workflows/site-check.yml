@@ -1,0 +1,70 @@
+name: Site build validation
+
+on:
+  pull_request:
+  push:
+    branches: [master, ci/pages-build-validation]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+defaults:
+  run:
+    shell: bash
+
+concurrency:
+  group: site-validation-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  compare:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      JEKYLL_ENV: production
+      BUNDLE_FROZEN: "true"
+      BUNDLE_FORCE_RUBY_PLATFORM: "true"
+    steps:
+      - name: Check out source
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - name: Set up Ruby and install locked dependencies
+        uses: ruby/setup-ruby@de492cf36cbab201753d720ce4f4e336cd688c94 # v1
+        with:
+          ruby-version: "3.3.13"
+          bundler: "2.6.5"
+          bundler-cache: true
+      - name: Prepare a shared build time and legacy source
+        run: |
+          mkdir -p "$RUNNER_TEMP/legacy-source"
+          git archive HEAD | tar -x -C "$RUNNER_TEMP/legacy-source"
+          date -u '+time: "%Y-%m-%dT%H:%M:%SZ"' > "$RUNNER_TEMP/build-time.yml"
+          printf '\n' >> "$RUNNER_TEMP/legacy-source/_config.yml"
+          cat "$RUNNER_TEMP/build-time.yml" >> "$RUNNER_TEMP/legacy-source/_config.yml"
+          git rev-parse HEAD > "$RUNNER_TEMP/source-sha.txt"
+      - name: Build with the previous Pages environment
+        run: |
+          bash .github/scripts/build_legacy.sh "$RUNNER_TEMP/legacy-source" "$RUNNER_TEMP/site-legacy" 2>&1 | tee "$RUNNER_TEMP/legacy-build.log"
+      - name: Build with the repository lockfile
+        run: |
+          bundle exec jekyll build --config "_config.yml,$RUNNER_TEMP/build-time.yml" --destination "$RUNNER_TEMP/site-candidate" --trace 2>&1 | tee "$RUNNER_TEMP/candidate-build.log"
+          git diff --exit-code -- Gemfile Gemfile.lock
+      - name: Compare generated files
+        run: |
+          python3 .github/scripts/compare_sites.py "$RUNNER_TEMP/site-legacy" "$RUNNER_TEMP/site-candidate" --report "$RUNNER_TEMP/comparison.json" | tee "$RUNNER_TEMP/comparison.txt"
+      - name: Save both builds and comparison evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: pages-validation-${{ github.sha }}
+          retention-days: 30
+          if-no-files-found: error
+          path: |
+            ${{ runner.temp }}/site-legacy
+            ${{ runner.temp }}/site-candidate
+            ${{ runner.temp }}/*-build.log
+            ${{ runner.temp }}/build-time.yml
+            ${{ runner.temp }}/source-sha.txt
+            ${{ runner.temp }}/comparison.*
