@@ -24,6 +24,7 @@ timezone: Asia/Yekaterinburg
 # Match the CSS serialization used by the built-in GitHub Pages builder.
 sass:
   style: compressed
+  sourcemap: never
 
 # При выводе всех постов на одной странице используем постраничный вывод
 paginate: 5
