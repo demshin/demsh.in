@@ -1,42 +1,65 @@
 # GitHub Pages build and deployment
 
-`Site build and deployment` builds Jekyll 4.4.1 from the frozen `Gemfile.lock`
-on Ruby 3.3.13 with Bundler 2.6.5. It compares the output with the previous
-official Pages container, using the same source and build time. Files must
-match byte for byte except these reviewed Jekyll 4 differences:
+`Site build and deployment` builds standalone Jekyll from the frozen
+`Gemfile.lock` on Ruby 3.3.13 with Bundler 2.6.5. There is one build and no
+legacy Pages container, Docker requirement, or CSS hash exception list.
 
-- Repeated blank lines between elements in the three post listing pages.
-  Text, attributes, inline spaces, and whitespace inside code, scripts, styles,
-  SVG, and other protected elements must still match.
-- The exact RSS generator change from `Jekyll v3.10.0` to `Jekyll v4.4.1`.
-- Two CSS outputs whose old and new SHA-256 pairs are recorded in
-  `.github/scripts/build_compatibility.json`. These pairs were checked in
-  Chrome across desktop/mobile layouts and responsive breakpoints, including
-  computed styles, geometry, navigation hover, and pixel comparisons.
+## Validation
 
-The only allowed extra file is `CNAME`, containing `demsh.in`. Sass source
-maps are disabled. Missing files, other extra files, unknown CSS changes,
-content changes, invalid XML, and missing canonical/analytics markers fail
-validation. The guard's regression tests run before either build.
+The Python standard-library validator `.github/scripts/check_site.py` runs
+against the generated directory, without network access. Its tests run before
+the Jekyll build. `.github/scripts/site_contract.json` records the existing
+published paths, post paths, domain, analytics ID, and existing redirect.
+It contains no content or CSS hashes.
 
-Compressed CSS preserves the published layout and colors. A future styling
-change requires reviewing both CSS outputs and updating their recorded hashes;
-do not replace this check with an unrestricted CSS exception. External actions
-are pinned by SHA; the legacy container is pinned
-by digest and runs without network access, a token, or writable source files.
-These `.github/` instructions and scripts are excluded from Jekyll output.
+Validation requires:
+
+- All previously published files, including posts, CV, listings, 404, styles,
+  fonts, scripts, RSS, sitemap, robots.txt, and CNAME, remain present and nonempty.
+- HTML pages have titles, descriptions, the correct canonical, stylesheet,
+  RSS link, and analytics. Posts retain their title, body, date, and structured
+  markup. Generated redirect pages instead require their target canonical and
+  refresh instruction.
+- Local links, fragment targets, HTML resources, and CSS `url()` resources
+  resolve to generated files. Directory URLs such as `/about` are supported.
+- RSS contains the latest ten posts (or all posts if fewer), without duplicate
+  items, with titles, dates, GUIDs, and links matching generated post pages.
+- The sitemap covers generated HTML pages except 404 and redirect aliases,
+  without duplicate URLs or off-domain locations. Its links must resolve.
+- The existing redirect remains, CNAME matches the domain, and robots.txt
+  references the correct sitemap.
+- No source maps, source/configuration files, hidden/private directories,
+  symlinks, or empty files enter the published output.
+
+New pages and assets are allowed. Normal text and CSS changes need no hash
+updates. Removing an existing published path requires an explicit contract
+change. Keep that change separate and review its URL/redirect impact.
+
+These checks do not compare prose or appearance with an old Jekyll version,
+fetch external links, or replace browser review of intentional design changes.
+The Jekyll 4 migration's saved visual and byte-comparison evidence remains in
+the local ignored `_migration_artifacts/` archive.
+
+Run the same checks locally:
+
+```bash
+python3 -B -m unittest discover -s .github/scripts -p 'test_*.py' -v
+JEKYLL_ENV=production bundle exec jekyll build --destination /tmp/demshin-site --trace
+python3 .github/scripts/check_site.py /tmp/demshin-site --report /tmp/demshin-validation.json
+```
 
 ## Publishing
 
-The `compare` job has only `contents: read`. After successful comparison it
-packages that exact candidate directory with `actions/upload-pages-artifact`.
-Both builds, logs, source SHA, build time, comparison report, and the deployable
-Pages artifact are retained for 30 days. Artifacts from failed runs are
-diagnostic only.
+The `build` job has only `contents: read`. After successful validation it
+packages that exact directory with `actions/upload-pages-artifact`. The site,
+build log, source SHA, UTC build time, validation report, and deployable Pages
+artifact are retained for 30 days. The report includes every output file's
+SHA-256 so the packaged and public files can be checked against it. Artifacts
+from failed runs are diagnostic only.
 
 The separate `deploy` job requires all of the following:
 
-- The `compare` job succeeded, including artifact packaging.
+- The `build` job succeeded, including validation and artifact packaging.
 - The run is for `refs/heads/master`.
 - Repository variable `PAGES_DEPLOY_ENABLED` is exactly `true`.
 
@@ -44,51 +67,27 @@ Only this job receives `pages: write` and `id-token: write`. It uses the
 `github-pages` environment and publishes the artifact from the same run.
 Pull requests cannot deploy. An absent or false deployment variable disables
 publishing without disabling validation. Runs on `master` are serialized;
-new pushes do not cancel an in-progress deployment.
+new pushes do not cancel an in-progress deployment. `workflow_dispatch` on
+`master` can republish the current source.
 
-The site URL and base path come from `_config.yml`. The custom domain and
-HTTPS settings remain in GitHub Pages settings; no DNS change is needed.
-
-## Initial cutover
-
-1. Keep `PAGES_DEPLOY_ENABLED` absent or false while reviewing and merging
-   the workflow. Verify its PR and `master` checks; the deploy job must skip.
-2. Save the live published site, its checksums, and the current Pages settings
-   in `_migration_artifacts/` outside Git. Keep the successful CI artifacts
-   outside GitHub's retention window as well.
-3. Change only Pages `build_type` from `legacy` to `workflow`. Read it back
-   and confirm `cname: demsh.in` and `https_enforced: true` are preserved.
-4. Set `PAGES_DEPLOY_ENABLED` to `true` and manually run `site-check.yml` on
-   `master`. Confirm comparison, packaging, and deployment all succeed.
-5. Check HTTPS, all existing URLs and static assets, the existing redirect,
-   CSS, the RSS feed, sitemap, and custom 404 behavior. RSS build dates may
-   change; page and post content must remain unchanged.
-
-Once enabled, pushes to `master` build, validate, and deploy automatically.
-`workflow_dispatch` on `master` can republish the current source.
+External actions remain pinned by SHA. The site URL and base path come from
+`_config.yml`; Sass source maps remain disabled. Pages uses `build_type:
+workflow`, custom domain `demsh.in`, and HTTPS enforcement. No DNS change is
+needed. `.github/` scripts and instructions are excluded from Jekyll output.
 
 ## Rollback
 
-Keep the verified published-site archive and saved settings in the ignored
-`_migration_artifacts/` directory. Changing or reverting the workflow does
-not itself restore Pages settings.
+Keep verified published-site archives, reports, and saved Pages settings in
+the ignored `_migration_artifacts/` directory, outside GitHub's artifact
+retention window. Revert a bad source/workflow change and run the workflow
+on the restored source, then verify deployment and the public site.
 
-The last verified Jekyll 3 publication before the upgrade is commit
-`76197fd3b7925604992f18ab665fee0df68138f6`. Reverting a failed upgrade and
-running the workflow on the restored source keeps the Actions publisher.
+The last verified publication with the temporary parity gate is
+`5c55a70df4b116e411291321af3fef0e3935638d` (Jekyll 4.4.1). The last verified
+Jekyll 3 publication was `76197fd3b7925604992f18ab665fee0df68138f6`.
 
-For a fallback to the built-in publisher, first restore and verify source
-compatible with Jekyll 3:
-
-1. Set `PAGES_DEPLOY_ENABLED` to `false`. Let any in-progress deployment finish
-   or explicitly cancel it before restoring the previous publisher.
-2. Restore Pages `build_type: legacy` and `source: {branch: master, path: /}`.
-   Preserve the custom domain and HTTPS settings.
-3. Request a legacy Pages build if one did not start automatically; wait for
-   successful build and deployment, then verify the public site again.
-
-The separately saved site archive is the content reference if rebuilding
-ever becomes unsuitable. It is not an automatically deployable rollback job.
-
-Further dependency upgrades and replacing the temporary legacy parity gate
-must be reviewed as separate changes.
+To pause automatic publishing, set `PAGES_DEPLOY_ENABLED` to `false`. This
+does not cancel an already running deployment; finish or explicitly cancel
+that deployment before another publisher takes over. Reverting source or
+workflow files does not restore Pages settings. Saved site archives are
+content references, not an automatically deployable rollback job.

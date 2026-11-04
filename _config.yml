@@ -21,7 +21,7 @@ google_analytics_id: G-XKK8ZMW7D2
 markdown: kramdown
 timezone: Asia/Yekaterinburg
 
-# Match the CSS serialization used by the built-in GitHub Pages builder.
+# Publish compressed CSS without build-path source maps.
 sass:
   style: compressed
   sourcemap: never

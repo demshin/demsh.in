@@ -3,7 +3,7 @@ name: Site build and deployment
 on:
   pull_request:
   push:
-    branches: [master, ci/pages-actions-deployment]
+    branches: [master]
   workflow_dispatch:
 
 permissions:
@@ -18,7 +18,7 @@ concurrency:
   cancel-in-progress: ${{ github.ref != 'refs/heads/master' }}
 
 jobs:
-  compare:
+  build:
     runs-on: ubuntu-24.04
     timeout-minutes: 20
     env:
@@ -36,32 +36,25 @@ jobs:
           ruby-version: "3.3.13"
           bundler: "2.6.5"
           bundler-cache: true
-      - name: Test the build comparison guard
+      - name: Test the site validator
         run: python3 -B -m unittest discover -s .github/scripts -p 'test_*.py' -v
-      - name: Prepare a shared build time and legacy source
+      - name: Record the build time and source
         run: |
-          mkdir -p "$RUNNER_TEMP/legacy-source"
-          git archive HEAD | tar -x -C "$RUNNER_TEMP/legacy-source"
           date -u '+time: "%Y-%m-%dT%H:%M:%SZ"' > "$RUNNER_TEMP/build-time.yml"
-          printf '\n' >> "$RUNNER_TEMP/legacy-source/_config.yml"
-          cat "$RUNNER_TEMP/build-time.yml" >> "$RUNNER_TEMP/legacy-source/_config.yml"
           git rev-parse HEAD > "$RUNNER_TEMP/source-sha.txt"
-      - name: Build with the previous Pages environment
-        run: |
-          bash .github/scripts/build_legacy.sh "$RUNNER_TEMP/legacy-source" "$RUNNER_TEMP/site-legacy" 2>&1 | tee "$RUNNER_TEMP/legacy-build.log"
       - name: Build with the repository lockfile
         run: |
           bundle exec jekyll build --config "_config.yml,$RUNNER_TEMP/build-time.yml" --destination "$RUNNER_TEMP/site-candidate" --trace 2>&1 | tee "$RUNNER_TEMP/candidate-build.log"
           git diff --exit-code -- Gemfile Gemfile.lock
-      - name: Compare generated files
+      - name: Validate generated pages and assets
         run: |
-          python3 .github/scripts/compare_sites.py "$RUNNER_TEMP/site-legacy" "$RUNNER_TEMP/site-candidate" --report "$RUNNER_TEMP/comparison.json" | tee "$RUNNER_TEMP/comparison.txt"
+          python3 .github/scripts/check_site.py "$RUNNER_TEMP/site-candidate" --report "$RUNNER_TEMP/validation.json" | tee "$RUNNER_TEMP/validation.txt"
       - name: Package the verified site for Pages
         uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4
         with:
           path: ${{ runner.temp }}/site-candidate
           retention-days: 30
-      - name: Save both builds and comparison evidence
+      - name: Save the build and validation evidence
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
@@ -69,16 +62,15 @@ jobs:
           retention-days: 30
           if-no-files-found: error
           path: |
-            ${{ runner.temp }}/site-legacy
             ${{ runner.temp }}/site-candidate
             ${{ runner.temp }}/*-build.log
             ${{ runner.temp }}/build-time.yml
             ${{ runner.temp }}/source-sha.txt
-            ${{ runner.temp }}/comparison.*
+            ${{ runner.temp }}/validation.*
 
   deploy:
     if: github.ref == 'refs/heads/master' && vars.PAGES_DEPLOY_ENABLED == 'true'
-    needs: compare
+    needs: build
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     permissions:
