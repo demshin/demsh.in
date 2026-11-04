@@ -36,6 +36,8 @@ jobs:
           ruby-version: "3.3.13"
           bundler: "2.6.5"
           bundler-cache: true
+      - name: Test the build comparison guard
+        run: python3 -B -m unittest discover -s .github/scripts -p 'test_*.py' -v
       - name: Prepare a shared build time and legacy source
         run: |
           mkdir -p "$RUNNER_TEMP/legacy-source"

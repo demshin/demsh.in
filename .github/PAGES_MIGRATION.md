@@ -1,13 +1,28 @@
 # GitHub Pages build and deployment
 
-`Site build and deployment` builds Jekyll 3.10.0 from the frozen `Gemfile.lock`
+`Site build and deployment` builds Jekyll 4.4.1 from the frozen `Gemfile.lock`
 on Ruby 3.3.13 with Bundler 2.6.5. It compares the output with the previous
-official Pages container, using the same source and build time. HTML, CSS,
-feeds, redirects, and static assets must match byte for byte. The only allowed
-extra file is `CNAME`, containing `demsh.in`.
+official Pages container, using the same source and build time. Files must
+match byte for byte except these reviewed Jekyll 4 differences:
 
-Compressed CSS matches the previous built-in Pages output. Dependencies are
-unchanged. External actions are pinned by SHA; the legacy container is pinned
+- Repeated blank lines between elements in the three post listing pages.
+  Text, attributes, inline spaces, and whitespace inside code, scripts, styles,
+  SVG, and other protected elements must still match.
+- The exact RSS generator change from `Jekyll v3.10.0` to `Jekyll v4.4.1`.
+- Two CSS outputs whose old and new SHA-256 pairs are recorded in
+  `.github/scripts/build_compatibility.json`. These pairs were checked in
+  Chrome across desktop/mobile layouts and responsive breakpoints, including
+  computed styles, geometry, navigation hover, and pixel comparisons.
+
+The only allowed extra file is `CNAME`, containing `demsh.in`. Sass source
+maps are disabled. Missing files, other extra files, unknown CSS changes,
+content changes, invalid XML, and missing canonical/analytics markers fail
+validation. The guard's regression tests run before either build.
+
+Compressed CSS preserves the published layout and colors. A future styling
+change requires reviewing both CSS outputs and updating their recorded hashes;
+do not replace this check with an unrestricted CSS exception. External actions
+are pinned by SHA; the legacy container is pinned
 by digest and runs without network access, a token, or writable source files.
 These `.github/` instructions and scripts are excluded from Jekyll output.
 
@@ -58,7 +73,12 @@ Keep the verified published-site archive and saved settings in the ignored
 `_migration_artifacts/` directory. Changing or reverting the workflow does
 not itself restore Pages settings.
 
-For an immediate fallback while the Jekyll 3 source remains compatible:
+The last verified Jekyll 3 publication before the upgrade is commit
+`76197fd3b7925604992f18ab665fee0df68138f6`. Reverting a failed upgrade and
+running the workflow on the restored source keeps the Actions publisher.
+
+For a fallback to the built-in publisher, first restore and verify source
+compatible with Jekyll 3:
 
 1. Set `PAGES_DEPLOY_ENABLED` to `false`. Let any in-progress deployment finish
    or explicitly cancel it before restoring the previous publisher.
@@ -70,5 +90,5 @@ For an immediate fallback while the Jekyll 3 source remains compatible:
 The separately saved site archive is the content reference if rebuilding
 ever becomes unsuitable. It is not an automatically deployable rollback job.
 
-Dependency upgrades, replacing the temporary legacy parity gate, and the
-Jekyll 4/Sass migration must be reviewed as separate changes after cutover.
+Further dependency upgrades and replacing the temporary legacy parity gate
+must be reviewed as separate changes.

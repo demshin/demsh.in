@@ -1,13 +1,13 @@
 source 'https://rubygems.org'
 
-# Match the GitHub Pages Jekyll version without its unused plugin dependencies.
-# github-pages pins jekyll-remote-theme to a version requiring vulnerable rubyzip < 3.
+# Pin standalone Jekyll for the custom GitHub Pages workflow.
+# Keep explicit dependencies instead of the broad github-pages metagem.
 gem 'jekyll', '~> 4.4.1'
 gem 'jekyll-theme-minimal', '~> 0.2.0'
 gem 'kramdown-parser-gfm', '~> 1.1'
 gem 'webrick', '~> 1.9'
 
-# Jekyll 3 dependencies extracted from the standard library in recent Ruby versions.
+# Standard-library gems needed by the dependency set on recent Ruby versions.
 gem 'base64'
 gem 'bigdecimal'
 gem 'logger'
