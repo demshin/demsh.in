@@ -21,6 +21,10 @@ google_analytics_id: G-XKK8ZMW7D2
 markdown: kramdown
 timezone: Asia/Yekaterinburg
 
+# Match the CSS serialization used by the built-in GitHub Pages builder.
+sass:
+  style: compressed
+
 # При выводе всех постов на одной странице используем постраничный вывод
 paginate: 5
 paginate_path: "page:num"

@@ -1,4 +1,5 @@
 _site
+_migration_artifacts/
 .sass-cache
 .jekyll-metadata
 .idea/
