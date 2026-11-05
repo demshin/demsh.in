@@ -57,6 +57,10 @@ artifact are retained for 30 days. The report includes every output file's
 SHA-256 so the packaged and public files can be checked against it. Artifacts
 from failed runs are diagnostic only.
 
+Both the Pages packager and the evidence uploader use Node.js 24 actions.
+Evidence uploads explicitly keep ZIP archiving (`archive: true`) so downloads
+retain the existing directory layout; hidden files remain excluded.
+
 The separate `deploy` job requires all of the following:
 
 - The `build` job succeeded, including validation and artifact packaging.
