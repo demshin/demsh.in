@@ -61,6 +61,12 @@ Both the Pages packager and the evidence uploader use Node.js 24 actions.
 Evidence uploads explicitly keep ZIP archiving (`archive: true`) so downloads
 retain the existing directory layout; hidden files remain excluded.
 
+The official Pages publisher bundles a dependency that imports Node's deprecated
+`punycode` module. Its step sets `NODE_OPTIONS: --disable-warning=DEP0040` to
+filter that specific upstream notice. Other warning codes and error exit
+statuses remain unchanged; build and validation steps have no such filter.
+Remove the workaround when a pinned upstream release removes that import.
+
 The separate `deploy` job requires all of the following:
 
 - The `build` job succeeded, including validation and artifact packaging.

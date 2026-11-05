@@ -84,3 +84,6 @@ jobs:
       - name: Publish the verified artifact
         id: deployment
         uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5
+        env:
+          # Upstream's bundled whatwg-url still imports Node's deprecated punycode.
+          NODE_OPTIONS: --disable-warning=DEP0040
